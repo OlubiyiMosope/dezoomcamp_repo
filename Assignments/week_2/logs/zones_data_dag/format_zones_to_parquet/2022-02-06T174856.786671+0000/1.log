@@ -1,0 +1,22 @@
+[2022-02-06 17:49:06,889] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: zones_data_dag.format_zones_to_parquet manual__2022-02-06T17:48:56.786671+00:00 [queued]>
+[2022-02-06 17:49:06,909] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: zones_data_dag.format_zones_to_parquet manual__2022-02-06T17:48:56.786671+00:00 [queued]>
+[2022-02-06 17:49:06,910] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-06 17:49:06,910] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-02-06 17:49:06,911] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-06 17:49:06,934] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): format_zones_to_parquet> on 2022-02-06 17:48:56.786671+00:00
+[2022-02-06 17:49:06,942] {standard_task_runner.py:52} INFO - Started process 754 to run task
+[2022-02-06 17:49:06,948] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'zones_data_dag', 'format_zones_to_parquet', 'manual__2022-02-06T17:48:56.786671+00:00', '--job-id', '261', '--raw', '--subdir', 'DAGS_FOLDER/zones_data_dag.py', '--cfg-path', '/tmp/tmpyf2rqz6l', '--error-file', '/tmp/tmprf6w3zyc']
+[2022-02-06 17:49:06,950] {standard_task_runner.py:77} INFO - Job 261: Subtask format_zones_to_parquet
+[2022-02-06 17:49:07,053] {logging_mixin.py:109} INFO - Running <TaskInstance: zones_data_dag.format_zones_to_parquet manual__2022-02-06T17:48:56.786671+00:00 [running]> on host c0c5e0341789
+[2022-02-06 17:49:07,155] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=zones_data_dag
+AIRFLOW_CTX_TASK_ID=format_zones_to_parquet
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-06T17:48:56.786671+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-02-06T17:48:56.786671+00:00
+[2022-02-06 17:49:07,353] {python.py:175} INFO - Done. Returned value was: None
+[2022-02-06 17:49:07,373] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=zones_data_dag, task_id=format_zones_to_parquet, execution_date=20220206T174856, start_date=20220206T174906, end_date=20220206T174907
+[2022-02-06 17:49:07,442] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-06 17:49:07,533] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

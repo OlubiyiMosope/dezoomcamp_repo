@@ -1,0 +1,26 @@
+[2022-02-06 17:49:02,650] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: zones_data_dag.download_zones_data manual__2022-02-06T17:48:56.786671+00:00 [queued]>
+[2022-02-06 17:49:02,670] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: zones_data_dag.download_zones_data manual__2022-02-06T17:48:56.786671+00:00 [queued]>
+[2022-02-06 17:49:02,671] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-06 17:49:02,671] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-02-06 17:49:02,672] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-06 17:49:02,697] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): download_zones_data> on 2022-02-06 17:48:56.786671+00:00
+[2022-02-06 17:49:02,707] {standard_task_runner.py:52} INFO - Started process 748 to run task
+[2022-02-06 17:49:02,713] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'zones_data_dag', 'download_zones_data', 'manual__2022-02-06T17:48:56.786671+00:00', '--job-id', '260', '--raw', '--subdir', 'DAGS_FOLDER/zones_data_dag.py', '--cfg-path', '/tmp/tmp2r5y6p3t', '--error-file', '/tmp/tmpx099do4_']
+[2022-02-06 17:49:02,723] {standard_task_runner.py:77} INFO - Job 260: Subtask download_zones_data
+[2022-02-06 17:49:02,852] {logging_mixin.py:109} INFO - Running <TaskInstance: zones_data_dag.download_zones_data manual__2022-02-06T17:48:56.786671+00:00 [running]> on host c0c5e0341789
+[2022-02-06 17:49:02,975] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=zones_data_dag
+AIRFLOW_CTX_TASK_ID=download_zones_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-06T17:48:56.786671+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-02-06T17:48:56.786671+00:00
+[2022-02-06 17:49:02,978] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-02-06 17:49:02,980] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'curl -sSLf https://s3.amazonaws.com/nyc-tlc/misc/taxi+_zone_lookup.csv > /opt/***/taxi+_zone_lookup.csv']
+[2022-02-06 17:49:03,002] {subprocess.py:85} INFO - Output:
+[2022-02-06 17:49:04,346] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-02-06 17:49:04,394] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=zones_data_dag, task_id=download_zones_data, execution_date=20220206T174856, start_date=20220206T174902, end_date=20220206T174904
+[2022-02-06 17:49:04,464] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-06 17:49:04,546] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

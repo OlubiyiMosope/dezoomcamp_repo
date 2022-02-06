@@ -1,0 +1,29 @@
+[2022-02-06 18:33:31,826] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: fhv_data_dag.remove_temporary_fhv_files scheduled__2019-09-02T06:00:00+00:00 [queued]>
+[2022-02-06 18:33:31,846] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: fhv_data_dag.remove_temporary_fhv_files scheduled__2019-09-02T06:00:00+00:00 [queued]>
+[2022-02-06 18:33:31,847] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-06 18:33:31,848] {taskinstance.py:1239} INFO - Starting attempt 3 of 4
+[2022-02-06 18:33:31,848] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-06 18:33:31,872] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): remove_temporary_fhv_files> on 2019-09-02 06:00:00+00:00
+[2022-02-06 18:33:31,880] {standard_task_runner.py:52} INFO - Started process 2441 to run task
+[2022-02-06 18:33:31,886] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'fhv_data_dag', 'remove_temporary_fhv_files', 'scheduled__2019-09-02T06:00:00+00:00', '--job-id', '271', '--raw', '--subdir', 'DAGS_FOLDER/fhv_data_dag.py', '--cfg-path', '/tmp/tmp11u2uxes', '--error-file', '/tmp/tmpm909v7ei']
+[2022-02-06 18:33:31,888] {standard_task_runner.py:77} INFO - Job 271: Subtask remove_temporary_fhv_files
+[2022-02-06 18:33:31,981] {logging_mixin.py:109} INFO - Running <TaskInstance: fhv_data_dag.remove_temporary_fhv_files scheduled__2019-09-02T06:00:00+00:00 [running]> on host c0c5e0341789
+[2022-02-06 18:33:32,047] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-06 18:33:32,076] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=fhv_data_dag
+AIRFLOW_CTX_TASK_ID=remove_temporary_fhv_files
+AIRFLOW_CTX_EXECUTION_DATE=2019-09-02T06:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2019-09-02T06:00:00+00:00
+[2022-02-06 18:33:32,078] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-02-06 18:33:32,080] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'rm /opt/***/fhv_tripdata_2019-09.csv /opt/***/fhv_tripdata_2019-09.parquet']
+[2022-02-06 18:33:32,098] {subprocess.py:85} INFO - Output:
+[2022-02-06 18:33:32,121] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-02-06 18:33:32,169] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=fhv_data_dag, task_id=remove_temporary_fhv_files, execution_date=20190902T060000, start_date=20220206T183331, end_date=20220206T183332
+[2022-02-06 18:33:32,218] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-06 18:33:32,280] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
